@@ -26,9 +26,15 @@
          <li class="nav-item active">
            <a class="nav-link" href="<%= root_path %>">Home <span class="sr-only">(current)</span></a>
          </li>
+         <li class="nav-item">
+           <a class="nav-link" href="<%= all_path %> ">Tout les Events</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="<%= events_new_path %> ">Créer un Event</a>
+         </li>
            <% if user_signed_in? %>
               <li class="nav-item">
-                <a class="nav-link" href="<%= destroy_user_session_path %> method: :delete">Log out</a>
+                <a class="nav-link" href="<%= destroy_user_session_path %> ">Log out</a>
               </li>
            <% else %>
               <li class="nav-item">
